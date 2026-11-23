@@ -1,7 +1,219 @@
-FIXORA Logo & Branding
-Search Bar
-Location
-Service Categories
-Popular Services
-Bottom Navigation
-Mobile Responsive Layout
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIXORA</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #059669;
+  color: white;
+  padding: 25px 20px;
+  border-radius: 0 0 25px 25px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #a7f3d0;
+}
+
+.tagline {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.location {
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.location strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+.search {
+  background: white;
+  color: #64748b;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+main {
+  padding: 22px 16px;
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.category {
+  background: white;
+  padding: 16px 5px;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid #e2e8f0;
+}
+
+.category div {
+  font-size: 25px;
+}
+
+.category p {
+  font-size: 11px;
+  margin-top: 8px;
+}
+
+.banner {
+  background: #0f172a;
+  color: white;
+  padding: 22px;
+  border-radius: 18px;
+  margin-top: 25px;
+}
+
+.banner p {
+  margin-top: 10px;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.banner button {
+  margin-top: 18px;
+  padding: 12px 18px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.service {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.service p {
+  color: #64748b;
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 14px 4px;
+  border-top: 1px solid #e2e8f0;
+}
+
+nav div {
+  font-size: 11px;
+  text-align: center;
+  color: #059669;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">FIX<span>ORA</span></div>
+  <div class="tagline">EVERY SERVICE. ONE APP.</div>
+
+  <div class="location">
+    📍 Your Location
+    <strong>Choose your location ⌄</strong>
+  </div>
+
+  <div class="search">
+    🔍 Search for services...
+  </div>
+</header>
+
+<main>
+
+  <h2>Explore Services</h2>
+
+  <div class="categories">
+    <div class="category"><div>⚡</div><p>Electrician</p></div>
+    <div class="category"><div>🚰</div><p>Plumber</p></div>
+    <div class="category"><div>🧹</div><p>Cleaning</p></div>
+    <div class="category"><div>❄️</div><p>AC Repair</p></div>
+    <div class="category"><div>🪚</div><p>Carpenter</p></div>
+    <div class="category"><div>🎨</div><p>Painting</p></div>
+    <div class="category"><div>🔧</div><p>Mechanic</p></div>
+    <div class="category"><div>＋</div><p>More</p></div>
+  </div>
+
+  <div class="banner">
+    <h2>Need help at home?</h2>
+    <p>Find trusted professionals for your everyday service needs.</p>
+    <button onclick="alert('Welcome to FIXORA!')">Find a Professional →</button>
+  </div>
+
+  <h2 style="margin-top:25px;">Popular Services</h2>
+
+  <div class="service">
+    <strong>⚡ Electrical Services</strong>
+    <p>Repairs & installations</p>
+  </div>
+
+  <div class="service">
+    <strong>🚰 Plumbing Services</strong>
+    <p>Leakage & pipe repairs</p>
+  </div>
+
+  <div class="service">
+    <strong>❄️ AC Services</strong>
+    <p>Repair & maintenance</p>
+  </div>
+
+  <div class="service">
+    <strong>🧹 Home Cleaning</strong>
+    <p>Professional home cleaning</p>
+  </div>
+
+</main>
+
+<nav>
+  <div>🏠<br>Home</div>
+  <div>🔎<br>Explore</div>
+  <div>📅<br>Bookings</div>
+  <div>❤️<br>Saved</div>
+  <div>👤<br>Profile</div>
+</nav>
+
+</body>
+</html>
